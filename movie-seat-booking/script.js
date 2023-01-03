@@ -3,9 +3,11 @@ const seats = document.querySelectorAll(".row .seat:not(.occupied)");
 const count = document.getElementById("count");
 const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
-let ticketPrice = +movieSelect.value; // grab tick price value and convert string to int using +
 
 populateUI();
+
+let ticketPrice = +movieSelect.value; // grab tick price value and convert string to int using +
+
 
 // Save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
